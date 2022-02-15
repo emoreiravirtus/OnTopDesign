@@ -1,8 +1,34 @@
-<div id="tableItem" class="txt-m bg-normal-gray">
+<div id="tableItemDesktop" class="txt-m bg-normal-gray">
     <div><img [src]="tableItem.photo">{{ tableItem.name }}</div>
     <div>{{ tableItem.type }}</div>
     <div>{{ tableItem.startDate }}</div>
     <div>{{ tableItem.amount }}</div>
     <div><app-status-box [status]="tableItem.status"></app-status-box></div>
-    <div><app-action-dropdown></app-action-dropdown></div>
+    <div><app-action-dropdown [options]="dropDownOptions"></app-action-dropdown></div>
+</div>
+<div id="tableItemMobile" class="txt-m">
+    <div>
+        <p class="txt-s-b">Contractor name</p>
+        <p class="txt-s">{{ tableItem.name }}</p>
+    </div>
+    <div>
+        <p class="txt-s-b">Type</p>
+        <p class="txt-s">{{ tableItem.type }}</p>
+    </div>
+    <div>
+        <p class="txt-s-b">Start date</p>
+        <p class="txt-s">{{ tableItem.startDate }}</p>
+    </div>
+    <div>
+        <p class="txt-s-b">Amount</p>
+        <p class="txt-s">{{ tableItem.amount }}</p>
+    </div>
+    <div>
+        <p class="txt-s-b">Status</p>
+        <app-status-box [status]="tableItem.status"></app-status-box>
+    </div>
+    <div>
+        <p class="txt-s-b">Actions</p>
+        <app-action-dropdown [options]="dropDownOptions"></app-action-dropdown>
+    </div>
 </div>

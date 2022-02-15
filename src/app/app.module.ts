@@ -16,6 +16,7 @@ import { ButtonComponent } from './shared/button/button.component';
 import { ActionDropdownComponent } from './shared/action-dropdown/action-dropdown.component';
 import { TableComponent } from './contracts/table/table.component';
 import { TableItemComponent } from './contracts/table/table-item/table-item.component';
+import { FiltersComponent } from './contracts/filters/filters.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { TableItemComponent } from './contracts/table/table-item/table-item.comp
     ButtonComponent,
     ActionDropdownComponent,
     TableItemComponent,
+    FiltersComponent,
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,6 @@
     border: 1px solid;
     border: 0.5px solid map-get($colors, $key: 'light-gray');
     border-radius: 5px;
-    min-width: 300px;
     position: relative;
 
     .icon-search-dark-gray-l {
@@ -21,7 +20,7 @@
         z-index: 1;
         padding: 0 0 0 61px; 
         border: none;
-        width: calc(100% - 61px);
+        width: calc(90% - 61px);
     }
 
     ::placeholder {

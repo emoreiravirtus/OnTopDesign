@@ -1,0 +1,10 @@
+<div id="filtersContainer">
+    <h1 class="txt-xxl-b title txt-dark">Contracts for Client</h1>
+    <app-select-box-small class="date" [placeholder]="'Create on:   Jan/10/21  -   Jan/28/21'" [options]="options" [icon]="'calendar'"></app-select-box-small>
+    <app-select-box-small class="contract" [placeholder]="'Contract type'" [options]="options"></app-select-box-small>
+    <app-search-bar-small class="contractor" [placeholder]="'Contractor name'"></app-search-bar-small>
+    <app-select-box-small class="status" [placeholder]="'Status'" [options]="options" [icon]="'person'"></app-select-box-small>
+    <app-search-bar-big class="search-button"></app-search-bar-big>
+    <app-button class="filter-button" [type]="'light-gray'" [icon]="'tune'" [content]="'Filter'"></app-button>
+    <app-button class="add-button" [type]="'primary'" [icon]="'add'" [content]="'New hire'"></app-button>
+</div>

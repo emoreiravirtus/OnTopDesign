@@ -10,6 +10,13 @@ export class TableItemComponent implements OnInit {
 
   @Input() tableItem: TableItemObject;
 
+  dropDownOptions = [
+    { name: 'edit', icon: 'edit', type: 'dark-gray' },
+    { name: 'sign', icon: 'sign', type: 'dark-gray' },
+    { name: 'view summary', icon: 'file-text', type: 'dark-gray' },
+    { name: 'delete', icon: 'trash', type: 'primary' }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

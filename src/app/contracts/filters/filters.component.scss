@@ -1,0 +1,73 @@
+@import 'variables';
+@import 'mixins';
+
+#filtersContainer {  
+    margin: 60px 10vw 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.9fr 1.6fr 1.3fr 1fr .5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 18px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "title title title title title title title title title"
+        "search-button search-button search-button search-button search-button filter-button filter-button add-button add-button"
+        "date date date contract contractor contractor contractor status status";
+    
+    @include media("<tablet") {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1.5fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "search-button search-button"
+            "filter-button add-button"
+            "date date"
+            "contract contract"
+            "contractor contractor"
+            "status status";
+    }
+
+    .title { 
+        grid-area: title;
+        text-align: center;
+    }
+
+    .filter-button { 
+        grid-area: filter-button;
+    }
+    
+    .add-button { 
+        grid-area: add-button;
+    }
+    
+    .search-button { 
+        grid-area: search-button;
+    }
+    
+    .date { 
+        grid-area: date;
+        @include media("<tablet") {
+            margin: 0 50px;
+        }
+    }
+    
+    .contract {
+        grid-area: contract;
+        @include media("<tablet") {
+            margin: 0 50px;
+        }
+    }
+    
+    .contractor { 
+        grid-area: contractor;
+        @include media("<tablet") {
+            margin: 0 50px;
+        }
+    }
+    
+    .status {
+        grid-area: status;
+        @include media("<tablet") {
+            margin: 0 50px;
+        }
+    };
+}

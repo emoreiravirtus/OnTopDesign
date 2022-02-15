@@ -1,6 +1,7 @@
 @use 'fonts';
 @use 'variables';
 @use 'mixins';
+@import 'animations';
 
 ::selection {
     background-color: map-get(variables.$colors, 'primary');
@@ -14,6 +15,19 @@ body {
 
 p {
     margin: 0;
+}
+
+.increase {
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.increase:hover {
+    transform: scale(1.3);
+}
+
+.anime-sweet-breath {
+    animation: 2.5s sweet-breath infinite;
 }
 
 @each $name, $hex in variables.$colors {

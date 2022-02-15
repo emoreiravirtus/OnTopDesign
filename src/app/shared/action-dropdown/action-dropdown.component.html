@@ -1,7 +1,7 @@
 <div id="actionDropdown">
     <div class="icon-three-dots-dark-gray-l" (click)="toggleActionDropdown()"></div>
     <div class="normal-box" #actionDropdown tabindex="-1" (blur)="onBlur()">
-        <div class="option" *ngFor="let option of options">
+        <div class="option increase" *ngFor="let option of options">
             <div *ngIf="option.icon && option.type == 'dark-gray'"
                 [ngClass]="{
                     'icon-credit-card-dark-gray-s': option.icon == 'credit-card',

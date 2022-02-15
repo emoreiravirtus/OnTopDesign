@@ -1,12 +1,17 @@
 <div id="nav">
-    <div id="logo"></div>
-    <app-select-box-big class="documents" [placeholder]="'Documents'" [icon]="'person'" [options]="options"></app-select-box-big>
-    <app-select-box-big class="contracts" [placeholder]="'Contracts'" [icon]="'file-text'" [options]="options"></app-select-box-big>
-    <app-select-box-big class="payout" [placeholder]="'Payout'" [icon]="'credit-card'" [options]="options"></app-select-box-big>
-    <app-select-box-big class="time" [placeholder]="'Time'" [icon]="'calendar'" [options]="options"></app-select-box-big>
-    <div id="menu">
+    <div id="logo" class="increase"></div>
+    <app-select-box-big class="contracts increase" [placeholder]="'Contracts'" [icon]="'file-text'" [options]="options"></app-select-box-big>
+    <app-select-box-big class="documents increase" [placeholder]="'Documents'" [icon]="'person'" [options]="options"></app-select-box-big>
+    <app-select-box-big class="payout increase" [placeholder]="'Payout'" [icon]="'credit-card'" [options]="options"></app-select-box-big>
+    <app-select-box-big class="time increase" [placeholder]="'Time'" [icon]="'calendar'" [options]="options"></app-select-box-big>
+    <div id="menu" class="increase">
         <div id="hr"></div>
         <div id="profile-picture"></div>
         <div class="icon-arrow-down-dark-gray-s"></div>
+    </div>
+    <div id="hamburgerMenu" class="increase">
+        <div class="bg-primary"></div>
+        <div class="bg-primary"></div>
+        <div class="bg-primary"></div>
     </div>
 </div>

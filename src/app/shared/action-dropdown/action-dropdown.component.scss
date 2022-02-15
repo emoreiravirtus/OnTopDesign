@@ -2,17 +2,26 @@
 @import 'mixins';
 
 #actionDropdown {
+    position: relative;
     
     .icon-three-dots-dark-gray-l {
         cursor: pointer;
+
+        @include media('<=tablet') {
+            transform: rotate(90deg);
+        }
     }
     
     .normal-box {
         display: none;
         flex-direction: column;
         width: 162px;
-        height: 100%;
         cursor: pointer;
+        position: absolute;
+        top: 75%;
+        left: 0;
+        background: map-get($colors, 'light');
+        z-index: 2;
     
         .option:not(:last-of-type) {
             border-bottom: 1px solid map-get($colors, 'light-gray');
