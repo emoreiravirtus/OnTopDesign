@@ -1,5 +1,31 @@
-div {
-    display: flex;
-    width: 100vw;
-    justify-content: space-evenly;
+#contracts-container {  
+    margin: 60px 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.9fr 1.6fr 1.3fr 1fr .5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 18px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "title title title title title title title title title"
+        "search-button search-button search-button search-button search-button filter-button filter-button add-button add-button"
+        "date date date contract contractor contractor contractor status status";
+
+    .title { grid-area: title; text-align: center;}
+
+    .filter-button { grid-area: filter-button; }
+    
+    .add-button { grid-area: add-button; }
+    
+    .search-button { grid-area: search-button; }
+    
+    .date { grid-area: date; }
+    
+    .contract { grid-area: contract; }
+    
+    .contractor { 
+        grid-area: contractor;
+    }
+    
+    .status { grid-area: status; }
 }
+  
