@@ -1,0 +1,33 @@
+@import 'variables';
+
+#nav {
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+
+    #logo {
+        width: 149px;
+        height: 37px;
+        background-image: url('../../assets/images/logo.svg');
+    }
+
+    #menu {
+        display: flex;
+        align-items: center;
+
+        #hr {
+            border-left: 1px solid map-get($map: $colors, $key: 'normal-gray');
+            height: 45px;
+            margin-right: 40px;
+        }
+
+        #profile-picture {
+            background-image: url('../../assets/images/profile-picture.png');
+            width: 65px;
+            height: 65px;
+            margin-right: 13px;
+        }
+    }
+}

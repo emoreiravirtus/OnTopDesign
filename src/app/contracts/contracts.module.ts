@@ -4,7 +4,6 @@ import { ActionDropdownComponent } from "../shared/action-dropdown/action-dropdo
 import { ButtonComponent } from "../shared/button/button.component";
 import { SearchBarBigComponent } from "../shared/search-bar-big/search-bar-big.component";
 import { SearchBarSmallComponent } from "../shared/search-bar-small/search-bar-small.component";
-import { SelectBoxBigComponent } from "../shared/select-box-big/select-box-big.component";
 import { SelectBoxSmallComponent } from "../shared/select-box-small/select-box-small.component";
 import { StatusBoxComponent } from "../shared/status-box/status-box.component";
 import { ContractsComponent } from "./contracts.component";
@@ -14,7 +13,6 @@ import { ContractsComponent } from "./contracts.component";
     ContractsComponent,
     SearchBarSmallComponent,
     SelectBoxSmallComponent,
-    SelectBoxBigComponent,
     StatusBoxComponent,
     SearchBarBigComponent,
     ButtonComponent,
