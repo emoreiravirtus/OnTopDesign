@@ -7,12 +7,14 @@ import { ContractModule } from './contracts/contracts.module';
 import { NavComponent } from './nav/nav.component';
 import { CommonModule } from '@angular/common';
 import { SelectBoxBigComponent } from './shared/select-box-big/select-box-big.component';
+import { ChatBoxComponent } from './chat-box/chat-box.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    SelectBoxBigComponent
+    SelectBoxBigComponent,
+    ChatBoxComponent
   ],
   imports: [
     BrowserModule,

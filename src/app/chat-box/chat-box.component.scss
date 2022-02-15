@@ -1,0 +1,17 @@
+#chatBox {
+    width: 79px;
+    height: 79px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 68px;
+    bottom: 30px;
+
+    div {
+        background-image: url('../../assets/images/chat.svg');
+        width: 43px;
+        height: 41px;
+    }
+}
