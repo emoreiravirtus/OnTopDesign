@@ -1,0 +1,8 @@
+<div id="tableItem" class="txt-m bg-normal-gray">
+    <div><img [src]="tableItem.photo">{{ tableItem.name }}</div>
+    <div>{{ tableItem.type }}</div>
+    <div>{{ tableItem.startDate }}</div>
+    <div>{{ tableItem.amount }}</div>
+    <div><app-status-box [status]="tableItem.status"></app-status-box></div>
+    <div><app-action-dropdown></app-action-dropdown></div>
+</div>

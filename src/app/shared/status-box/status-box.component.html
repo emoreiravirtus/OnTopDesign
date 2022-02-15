@@ -1,7 +1,9 @@
 <div id="statusBox" [ngClass]="{
     'txt-success': status == 'active',
-    'txt-pending': status == 'pending'}"
-    class="txt-xs-b">
-    <div></div>
-    <p>{{ status | titlecase }}</p>
+    'txt-pending': status == 'pending'}">
+    <div class="txt-xs-b">
+        <div></div>
+        <p>{{ status | titlecase }}</p>
+    </div>
 </div>
+

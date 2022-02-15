@@ -1,0 +1,53 @@
+#contractsTable {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10vw 40px;
+    padding: 36px;
+
+    #contractsTableHeader {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "first second third fourth fifth sixth";
+        width: 100%;
+    
+        * {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .txt-l-b:nth-of-type(1) {
+            grid-area: first;
+        }
+    
+        .txt-l-b:nth-of-type(2) {
+            grid-area: second;
+        }
+    
+        .txt-l-b:nth-of-type(3) {
+            grid-area: third;
+        }
+    
+        .txt-l-b:nth-of-type(4) {
+            grid-area: fourth;
+        }
+    
+        .txt-l-b:nth-of-type(5) {
+            grid-area: fifth;
+        }
+    
+        .txt-l-b:nth-of-type(6) {
+            grid-area: sixth;
+        }
+    }
+    
+    #contractsTableItems {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

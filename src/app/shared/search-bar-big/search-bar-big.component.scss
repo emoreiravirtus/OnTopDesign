@@ -21,6 +21,7 @@
         z-index: 1;
         padding: 0 0 0 61px; 
         border: none;
+        width: calc(100% - 61px);
     }
 
     ::placeholder {

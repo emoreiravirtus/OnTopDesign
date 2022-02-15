@@ -1,25 +1,28 @@
 @import 'variables';
 
 #statusBox {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     border-radius: 20px;
-    padding: 6px 11px;
-    max-width: 200px;
+    width: 100%;
+    
+    .txt-xs-b {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 6px 11px;
 
-    div {
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        margin-right: 7px;
+        div {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            margin-right: 7px;
+        }
     }
 }
 
 #statusBox.txt-success {
     background: rgba(map-get($colors, $key: 'success'), .18);
 
-    div {
+    .txt-xs-b div {
         background-color: map-get($colors, $key: 'success');
     }
 }
@@ -27,7 +30,7 @@
 #statusBox.txt-pending {
     background: rgba(map-get($colors, $key: 'pending'), .18); 
 
-    div {
+    .txt-xs-b div {
         background-color: map-get($colors, $key: 'pending');
     }
 }

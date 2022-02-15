@@ -1,0 +1,13 @@
+<div id="contractsTable" class="normal-box">
+    <div id="contractsTableHeader">
+        <p class="txt-l-b">Contractor name</p>
+        <p class="txt-l-b">Type</p>
+        <p class="txt-l-b">Start date</p>
+        <p class="txt-l-b">Amount</p>
+        <p class="txt-l-b">Status</p>
+        <p class="txt-l-b">Actions</p>
+    </div>
+    <div id="contractsTableItems">
+        <app-table-item *ngFor="let tableItem of employees" [tableItem]="tableItem"></app-table-item>
+    </div>
+</div>
