@@ -1,0 +1,28 @@
+<div id="actionDropdown">
+    <div class="icon-three-dots-dark-gray-l" (click)="toggleActionDropdown()"></div>
+    <div class="normal-box" #actionDropdown tabindex="-1" (blur)="onBlur()">
+        <div class="option" *ngFor="let option of options">
+            <div *ngIf="option.icon && option.type == 'dark-gray'"
+                [ngClass]="{
+                    'icon-credit-card-dark-gray-s': option.icon == 'credit-card',
+                    'icon-file-text-dark-gray-s': option.icon == 'file-text',
+                    'icon-person-dark-gray-s': option.icon == 'person',
+                    'icon-sign-dark-gray-s': option.icon == 'sign',
+                    'icon-trash-dark-gray-s': option.icon == 'trash',
+                    'icon-calendar-dark-gray-s': option.icon == 'calendar',
+                    'icon-edit-dark-gray-s': option.icon == 'edit'}">
+            </div>
+            <div *ngIf="option.icon && option.type == 'primary'"
+                [ngClass]="{
+                    'icon-credit-card-primary-s': option.icon == 'credit-card',
+                    'icon-file-text-primary-s': option.icon == 'file-text',
+                    'icon-person-primary-s': option.icon == 'person',
+                    'icon-sign-primary-s': option.icon == 'sign',
+                    'icon-trash-primary-s': option.icon == 'trash',
+                    'icon-calendar-primary-s': option.icon == 'calendar',
+                    'icon-edit-primary-s': option.icon == 'edit'}">
+            </div>
+            <p class="txt-m txt-dark">{{ option.name | titlecase }}</p>
+        </div>
+    </div>
+</div>

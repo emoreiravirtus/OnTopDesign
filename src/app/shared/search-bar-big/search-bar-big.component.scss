@@ -7,8 +7,10 @@
     border: 1px solid;
     border: 0.5px solid map-get($colors, $key: 'light-gray');
     border-radius: 5px;
+    min-width: 300px;
+    position: relative;
 
-    div {
+    .icon-search-dark-gray-l {
         position: absolute;
         z-index: 2;
         left: 24px;
@@ -17,7 +19,7 @@
     input {
         position: absolute;
         z-index: 1;
-        padding: 0 61px;
+        padding: 0 0 0 61px; 
         border: none;
     }
 

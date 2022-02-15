@@ -1,0 +1,39 @@
+@import 'variables';
+@import 'mixins';
+
+#actionDropdown {
+    
+    .icon-three-dots-dark-gray-l {
+        cursor: pointer;
+    }
+    
+    .normal-box {
+        display: none;
+        flex-direction: column;
+        width: 162px;
+        height: 100%;
+        cursor: pointer;
+    
+        .option:not(:last-of-type) {
+            border-bottom: 1px solid map-get($colors, 'light-gray');
+        }
+    
+        .option {
+            display: flex;
+            align-items: center;
+            width: 136px;
+    
+            .txt-m.txt-dark {
+                margin-left: 10px;
+                letter-spacing: .1px;
+                line-height: 24px;
+                margin: 10px 0 10px 10px;
+            }
+        }
+    }
+    
+    .normal-box:focus {
+        outline: none;
+    }
+}
+

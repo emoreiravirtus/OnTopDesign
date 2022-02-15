@@ -1,7 +1,7 @@
 $colors: (
     primary: #FF5A70,
-    light-gray: #C4C4C4,
-    gray: #EBEBEB,
+    gray: #C4C4C4,
+    light-gray: #EBEBEB,
     light: #ffffff,
     dark: #1C0B11,
     dark-gray: #898989,
@@ -18,7 +18,8 @@ $font-sizes: (
     s: 12px,
     m: 14px,
     l: 16px,
-    xl: 18px
+    xl: 18px,
+    xxl: 32px
 );
 $font-variations: (
     l: $font-light,
@@ -40,5 +41,6 @@ $svgs: (
     sign: './images/sign.svg',
     search: './images/search.svg',
     tune: './images/tune.svg',
-    add: './images/add.svg'
+    add: './images/add.svg',
+    edit: './images/edit.svg'
 )

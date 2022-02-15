@@ -1,13 +1,26 @@
-<app-search-bar-small [placeholder]="'Contractor name'"></app-search-bar-small>
-<app-select-box-small [placeholder]="'Default'" [options]="options" [icon]="'calendar'"></app-select-box-small>
-<app-select-box-small [placeholder]="'Status'" [options]="options" [icon]="'person'"></app-select-box-small>
-<div style="height: 100px; width: 100%; display: flex;">
+<div style="height: 100px;">
     <app-select-box-big [placeholder]="'Documents'" [icon]="'person'" [options]="options"></app-select-box-big>
     <app-select-box-big [placeholder]="'Contracts'" [icon]="'file-text'" [options]="options"></app-select-box-big>
     <app-select-box-big [placeholder]="'Payout'" [icon]="'credit-card'" [options]="options"></app-select-box-big>
+    <app-select-box-big [placeholder]="'Time'" [icon]="'calendar'" [options]="options"></app-select-box-big>
+</div>
+<div>
+    <h1 class="txt-xxl-b">Contracts for Client</h1>
+</div>
+<div>
+    <app-select-box-small [placeholder]="'Create on:   Jan/10/21  -   Jan/28/21'" [options]="options" [icon]="'calendar'"></app-select-box-small>
+    <app-select-box-small [placeholder]="'Contract type'" [options]="options"></app-select-box-small>
+    <app-search-bar-small [placeholder]="'Contractor name'"></app-search-bar-small>
+    <app-select-box-small [placeholder]="'Status'" [options]="options" [icon]="'person'"></app-select-box-small>
+</div>
+<div>
+    <app-search-bar-big></app-search-bar-big>
+    <app-button [type]="'light-gray'" [icon]="'tune'" [content]="'Filter'"></app-button>
+    <app-button [type]="'primary'" [icon]="'add'" [content]="'New hire'"></app-button>
 </div>
 <app-status-box [status]="'active'"></app-status-box>
 <app-status-box [status]="'pending'"></app-status-box>
-<app-search-bar-big></app-search-bar-big>
-<app-button [type]="'gray'" [icon]="'tune'" [content]="'Filter'"></app-button>
-<app-button [type]="'primary'" [icon]="'add'" [content]="'New hire'"></app-button>
+<app-action-dropdown [options]="dropDownOptions"></app-action-dropdown>
+
+
+

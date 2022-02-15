@@ -1,6 +1,6 @@
 <div class="button" [ngClass]="{
     'primary bg-primary txt-light txt-l-b': type == 'primary',
-    'gray bg-gray txt-dark txt-l': type == 'gray'
+    'gray bg-light-gray txt-dark txt-l': type == 'light-gray'
     }">
     <div *ngIf="icon && type == 'primary'"
     [ngClass]="{
@@ -14,7 +14,7 @@
         'icon-add-light-l': icon == 'add'
     }">
     </div>
-    <div *ngIf="icon && type == 'gray'"
+    <div *ngIf="icon && type == 'light-gray'"
     [ngClass]="{
         'icon-credit-card-dark-l': icon == 'credit-card',
         'icon-file-text-dark-l': icon == 'file-text',
