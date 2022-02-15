@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-search-bar-small',
@@ -6,12 +6,18 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./search-bar-small.component.scss']
 })
 export class SearchBarSmallComponent implements OnInit {
+  
+  @ViewChild('searchBarSmallInput') el:ElementRef;
 
   @Input() placeholder: string;
-
+  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  focus() {
+    this.el.nativeElement.focus();
   }
 
 }

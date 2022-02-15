@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-select-box-small',
@@ -7,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SelectBoxSmallComponent implements OnInit {
 
+  @ViewChild('selectBoxSmallInput') el:ElementRef;
+
   @Input() icon: string;
   @Input() placeholder: string;
   @Input() options: Array<any>;
@@ -14,6 +16,10 @@ export class SelectBoxSmallComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  focus() {
+    this.el.nativeElement.style.size = '100px';
   }
 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-search-bar-big',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchBarBigComponent implements OnInit {
 
+  @ViewChild('searchBarBigInput') el:ElementRef;
+  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  focus() {
+    this.el.nativeElement.focus();
   }
 
 }
