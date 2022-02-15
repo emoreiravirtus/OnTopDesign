@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'mixins';
+
+#selectBoxBig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+
+    .txt-xl-b {
+        margin: 0 10px;
+    }
+
+    select {
+        border: none;
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+#selectBoxBig.active {
+    border-bottom: 6px solid map-get($colors, $key: 'primary');
+}
+

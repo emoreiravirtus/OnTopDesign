@@ -1,13 +1,51 @@
 @use 'fonts';
 @use 'variables';
+@use 'mixins';
 
 body {
     font-family: variables.$font-light;
 }
 
-.txt-small {
-    font-size: 12px;
-    color: variables.$color-dark-gray;
+@each $name, $hex in variables.$colors {
+    .bg-#{$name} {
+        background-color: $hex;
+    }
+
+    .txt-#{$name} {
+        color: $hex;
+    }
+}
+
+@each $name, $size in variables.$font-sizes {
+
+    .txt-#{$name} {
+        font-size: $size;
+    }
+
+    @each $v-name, $v in variables.$font-variations {
+        .txt-#{$name}-#{$v-name} {
+            font-size: $size;
+            font-family: $v;
+        }
+    }
+}
+
+@each $name, $path in variables.$svgs {
+    .icon-#{$name}-active-s {
+        @include mixins.svg-icon($path, 14px, 14px, map-get(variables.$colors, $key: 'primary'));
+    }
+
+    .icon-#{$name}-inactive-s {
+        @include mixins.svg-icon($path, 14px, 14px, map-get(variables.$colors, $key: 'dark-gray'));
+    }
+
+    .icon-#{$name}-active-l {
+        @include mixins.svg-icon($path, 24px, 24px, map-get(variables.$colors, $key: 'primary'));
+    }
+
+    .icon-#{$name}-inactive-l {
+        @include mixins.svg-icon($path, 24px, 24px, map-get(variables.$colors, $key: 'dark-gray'));
+    }
 }
 
 .normal-box {
@@ -21,5 +59,5 @@ body {
 
 input:focus{
     outline: none !important;
-    border: 1px solid variables.$color-gray
+    border: 1px solid map-get(variables.$colors, $key: 'primary');
 }

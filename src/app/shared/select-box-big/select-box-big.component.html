@@ -1,0 +1,24 @@
+<div id="selectBoxBig" [ngClass]="{'txt-primary active': active, 'txt-dark-gray': !active}">
+    <div *ngIf="icon && active"
+    [ngClass]="{
+        'icon-credit-card-active-s': icon == 'credit-card',
+        'icon-file-text-active-s': icon == 'file-text',
+        'icon-person-active-s': icon == 'person',
+        'icon-sign-active-s': icon == 'sign',
+        'icon-trash-active-s': icon == 'trash'
+    }">
+    </div>
+    <div *ngIf="icon && !active"
+    [ngClass]="{
+        'icon-credit-card-inactive-s': icon == 'credit-card',
+        'icon-file-text-inactive-s': icon == 'file-text',
+        'icon-person-inactive-s': icon == 'person',
+        'icon-sign-inactive-s': icon == 'sign',
+        'icon-trash-inactive-s': icon == 'trash'
+    }">
+    </div>
+    <div class="txt-xl-b">{{ placeholder }}</div>
+    <div id="arrow-down"
+    [ngClass]="{'icon-arrow-down-active-s': active, 'icon-arrow-down-inactive-s': !active}">
+    </div>
+</div>

@@ -1,23 +1,40 @@
-$color-primary: #FF5A70;
-$color-gray: #EBEBEB;
-$color-dark-gray: #898989;
-$color-status-active-txt: #36cf83;
-$color-status-active-bg: #36CF822E;
-$color-status-pending-txt: #F29D42;
-$color-status-pending-bg: #F29D424D;
+$colors: (
+    primary: #FF5A70,
+    gray: #EBEBEB,
+    dark-gray: #898989,
+    status-active-txt: #36cf83,
+    status-active-bg: #36CF822E,
+    status-pending-txt: #F29D42,
+    status-pending-bg: #F29D424D,
+);
 
 $font-light: 'aileronlight';
 $font-bold: 'aileronbold';
 $font-heavy: 'aileronheavy';
 $font-black: 'aileronblack';
+$font-sizes: (
+    xs: 10px,
+    s: 12px,
+    m: 14px,
+    l: 16px,
+    xl: 18px
+);
+$font-variations: (
+    l: $font-light,
+    b: $font-bold,
+    h: $font-heavy,
+    bl: $font-black
+);
 
-$svg-arrow-down: url('./images/arrow-down.svg');
-$svg-credit-card: url('./images/credit-card.svg');
-$svg-file-text: url('./images/file-text.svg');
-$svg-chat: url('./images/chat.svg');
-$svg-three-dots: url('./images/three-dots.svg');
-$svg-calendar: url('./images/calendar.svg');
-$svg-person: url('./images/person.svg');
-$svg-logo: url('./images/logo.svg');
-$svg-trash: url('./images/trash.svg');
-$svg-sign: url('./images/sign.svg');
+$svgs: (
+    arrow-down: './images/arrow-down.svg',
+    credit-card: './images/credit-card.svg',
+    file-text: './images/file-text.svg',
+    chat: './images/chat.svg',
+    three-dots: './images/three-dots.svg',
+    calendar: './images/calendar.svg',
+    person: './images/person.svg',
+    logo: './images/logo.svg',
+    trash: './images/trash.svg',
+    sign: './images/sign.svg',
+)
