@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContractsComponent implements OnInit {
 
+  options = [
+    1,
+    2
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
