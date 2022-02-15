@@ -12,6 +12,8 @@ export class FiltersComponent implements OnInit {
     2
   ];
 
+  client = 'Netflix';
+
   constructor() { }
 
   ngOnInit(): void {

@@ -4,6 +4,7 @@
     cursor: pointer;
 
     select {
+        background-color: map-get($map: $colors, $key: 'light');
         border: none;
         width: 100%;
         cursor: pointer;
