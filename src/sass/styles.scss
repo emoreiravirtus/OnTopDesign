@@ -35,20 +35,37 @@ p {
 }
 
 @each $name, $path in variables.$svgs {
-    .icon-#{$name}-active-s {
-        @include mixins.svg-icon($path, 14px, 14px, map-get(variables.$colors, $key: 'primary'));
+
+    .icon-#{$name}-light-s {
+        @include mixins.svg-icon($path, 14px, 14px, map-get(variables.$colors, 'light'));
     }
 
-    .icon-#{$name}-inactive-s {
-        @include mixins.svg-icon($path, 14px, 14px, map-get(variables.$colors, $key: 'dark-gray'));
+    .icon-#{$name}-light-l {
+        @include mixins.svg-icon($path, 24px, 24px, map-get(variables.$colors, 'light'));
     }
 
-    .icon-#{$name}-active-l {
-        @include mixins.svg-icon($path, 24px, 24px, map-get(variables.$colors, $key: 'primary'));
+    .icon-#{$name}-dark-s {
+        @include mixins.svg-icon($path, 14px, 14px, map-get(variables.$colors, 'dark'));
     }
 
-    .icon-#{$name}-inactive-l {
-        @include mixins.svg-icon($path, 24px, 24px, map-get(variables.$colors, $key: 'dark-gray'));
+    .icon-#{$name}-dark-l {
+        @include mixins.svg-icon($path, 24px, 24px, map-get(variables.$colors, 'dark'));
+    }
+
+    .icon-#{$name}-primary-s {
+        @include mixins.svg-icon($path, 14px, 14px, map-get(variables.$colors, 'primary'));
+    }
+
+    .icon-#{$name}-primary-l {
+        @include mixins.svg-icon($path, 24px, 24px, map-get(variables.$colors, 'primary'));
+    }
+
+    .icon-#{$name}-dark-gray-s {
+        @include mixins.svg-icon($path, 14px, 14px, map-get(variables.$colors, 'dark-gray'));
+    }
+
+    .icon-#{$name}-dark-gray-l {
+        @include mixins.svg-icon($path, 24px, 24px, map-get(variables.$colors, 'dark-gray'));
     }
 }
 

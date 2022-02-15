@@ -1,26 +1,26 @@
 <div id="selectBoxBig" [ngClass]="{'txt-primary active': active, 'txt-dark-gray': !active}">
     <div *ngIf="icon && active"
     [ngClass]="{
-        'icon-credit-card-active-s': icon == 'credit-card',
-        'icon-file-text-active-s': icon == 'file-text',
-        'icon-person-active-s': icon == 'person',
-        'icon-sign-active-s': icon == 'sign',
-        'icon-trash-active-s': icon == 'trash',
-        'icon-calendar-active-s': icon == 'calendar'
+        'icon-credit-card-primary-s': icon == 'credit-card',
+        'icon-file-text-primary-s': icon == 'file-text',
+        'icon-person-primary-s': icon == 'person',
+        'icon-sign-primary-s': icon == 'sign',
+        'icon-trash-primary-s': icon == 'trash',
+        'icon-calendar-primary-s': icon == 'calendar'
     }">
     </div>
     <div *ngIf="icon && !active"
     [ngClass]="{
-        'icon-credit-card-inactive-s': icon == 'credit-card',
-        'icon-file-text-inactive-s': icon == 'file-text',
-        'icon-person-inactive-s': icon == 'person',
-        'icon-sign-inactive-s': icon == 'sign',
-        'icon-trash-inactive-s': icon == 'trash',
-        'icon-calendar-inactive-s': icon == 'calendar'
+        'icon-credit-card-dark-gray-s': icon == 'credit-card',
+        'icon-file-text-dark-gray-s': icon == 'file-text',
+        'icon-person-dark-gray-s': icon == 'person',
+        'icon-sign-dark-gray-s': icon == 'sign',
+        'icon-trash-dark-gray-s': icon == 'trash',
+        'icon-calendar-dark-gray-s': icon == 'calendar'
     }">
     </div>
     <div class="txt-xl-b">{{ placeholder }}</div>
     <div id="arrow-down"
-    [ngClass]="{'icon-arrow-down-active-s': active, 'icon-arrow-down-inactive-s': !active}">
+    [ngClass]="{'icon-arrow-down-primary-s': active, 'icon-arrow-down-dark-gray-s': !active}">
     </div>
 </div>

@@ -1,0 +1,30 @@
+<div class="button" [ngClass]="{
+    'primary bg-primary txt-light txt-l-b': type == 'primary',
+    'gray bg-gray txt-dark txt-l': type == 'gray'
+    }">
+    <div *ngIf="icon && type == 'primary'"
+    [ngClass]="{
+        'icon-credit-card-light-l': icon == 'credit-card',
+        'icon-file-text-light-l': icon == 'file-text',
+        'icon-person-light-l': icon == 'person',
+        'icon-sign-light-l': icon == 'sign',
+        'icon-trash-light-l': icon == 'trash',
+        'icon-calendar-light-l': icon == 'calendar',
+        'icon-tune-light-l': icon == 'tune',
+        'icon-add-light-l': icon == 'add'
+    }">
+    </div>
+    <div *ngIf="icon && type == 'gray'"
+    [ngClass]="{
+        'icon-credit-card-dark-l': icon == 'credit-card',
+        'icon-file-text-dark-l': icon == 'file-text',
+        'icon-person-dark-l': icon == 'person',
+        'icon-sign-dark-l': icon == 'sign',
+        'icon-trash-dark-l': icon == 'trash',
+        'icon-calendar-dark-l': icon == 'calendar',
+        'icon-tune-dark-l': icon == 'tune',
+        'icon-add-dark-l': icon == 'add'
+    }">
+    </div>
+    <p>{{ content }}</p>
+</div>

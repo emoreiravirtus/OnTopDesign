@@ -1,5 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
+import { ButtonComponent } from "../shared/button/button.component";
 import { SearchBarBigComponent } from "../shared/search-bar-big/search-bar-big.component";
 import { SearchBarSmallComponent } from "../shared/search-bar-small/search-bar-small.component";
 import { SelectBoxBigComponent } from "../shared/select-box-big/select-box-big.component";
@@ -14,7 +15,8 @@ import { ContractsComponent } from "./contracts.component";
     SelectBoxSmallComponent,
     SelectBoxBigComponent,
     StatusBoxComponent,
-    SearchBarBigComponent
+    SearchBarBigComponent,
+    ButtonComponent
   ],
   imports: [
     CommonModule

@@ -2,11 +2,11 @@ $colors: (
     primary: #FF5A70,
     light-gray: #C4C4C4,
     gray: #EBEBEB,
+    light: #ffffff,
+    dark: #1C0B11,
     dark-gray: #898989,
     success: #36cf83,
-    status-active-bg: #36CF822E,
     pending: #F29D42,
-    status-pending-bg: #F29D424D,
 );
 
 $font-light: 'aileronlight';
@@ -38,5 +38,7 @@ $svgs: (
     logo: './images/logo.svg',
     trash: './images/trash.svg',
     sign: './images/sign.svg',
-    search: './images/search.svg'
+    search: './images/search.svg',
+    tune: './images/tune.svg',
+    add: './images/add.svg'
 )
