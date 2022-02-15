@@ -1,0 +1,8 @@
+<div id="selectBoxSmall">
+    <img *ngIf="icon" [src]="imgSrc">
+    <select class="txt-small">
+        <option class="option" value="" disabled selected>{{ placeholder }}</option>
+        <option class="option" *ngFor="let option of options">{{ option }}</option>
+    </select>
+</div>
+
