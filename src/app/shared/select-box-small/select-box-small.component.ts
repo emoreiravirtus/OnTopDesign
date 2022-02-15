@@ -10,15 +10,10 @@ export class SelectBoxSmallComponent implements OnInit {
   @Input() icon: string;
   @Input() placeholder: string;
   @Input() options: Array<any>;
-  
-  imgSrc: string;
 
   constructor() { }
 
   ngOnInit(): void {
-    if(this.icon) {
-      this.imgSrc = `../assets/images/${this.icon}.svg`;
-    }
   }
 
 }

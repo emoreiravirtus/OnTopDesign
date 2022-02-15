@@ -1,0 +1,27 @@
+@import 'variables';
+
+#searchBarBig {
+    display: flex;
+    align-items: center;
+    height: 58px;
+    border: 1px solid;
+    border: 0.5px solid map-get($colors, $key: 'light-gray');
+    border-radius: 5px;
+
+    div {
+        position: absolute;
+        z-index: 2;
+        left: 24px;
+    }
+
+    input {
+        position: absolute;
+        z-index: 1;
+        padding: 0 61px;
+        border: none;
+    }
+
+    ::placeholder {
+        color: map-get($colors, $key: 'light-gray');
+    }
+}

@@ -1,5 +1,13 @@
 <div id="selectBoxSmall" class="normal-box">
-    <img *ngIf="icon" [src]="imgSrc">
+    <div *ngIf="icon"
+    [ngClass]="{
+        'icon-credit-card-inactive-s': icon == 'credit-card',
+        'icon-file-text-inactive-s': icon == 'file-text',
+        'icon-person-inactive-s': icon == 'person',
+        'icon-sign-inactive-s': icon == 'sign',
+        'icon-trash-inactive-s': icon == 'trash',
+        'icon-calendar-inactive-s': icon == 'calendar'
+    }"></div>
     <select class="txt-small txt-dark-gray">
         <option class="option" value="" disabled selected>{{ placeholder }}</option>
         <option class="option" *ngFor="let option of options">{{ option }}</option>

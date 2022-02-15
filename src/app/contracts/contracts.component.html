@@ -1,6 +1,6 @@
 <app-search-bar-small [placeholder]="'Contractor name'"></app-search-bar-small>
 <app-select-box-small [placeholder]="'Default'" [options]="options" [icon]="'calendar'"></app-select-box-small>
-<app-select-box-small [placeholder]="'Status'" [options]="options"></app-select-box-small>
+<app-select-box-small [placeholder]="'Status'" [options]="options" [icon]="'person'"></app-select-box-small>
 <div style="height: 100px; width: 100%; display: flex;">
     <app-select-box-big [placeholder]="'Documents'" [icon]="'person'" [options]="options"></app-select-box-big>
     <app-select-box-big [placeholder]="'Contracts'" [icon]="'file-text'" [options]="options"></app-select-box-big>
@@ -8,3 +8,4 @@
 </div>
 <app-status-box [status]="'active'"></app-status-box>
 <app-status-box [status]="'pending'"></app-status-box>
+<app-search-bar-big></app-search-bar-big>
